@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+        // Box объектісін жасаймыз
+        Box myBox = new Box(10, 20, 15, "синий");
+
+        // Box әдістерін қолдану
+        myBox.printBoxInfo();   // Коробка туралы ақпаратты басып шығару
+        myBox.open();           // Коробканы ашу
+        myBox.addItem("Книга"); // Коробкаға кітап салу
+        myBox.printBoxInfo();   // Қайтадан ақпаратты басып шығару
+        myBox.close();          // Коробканы жабу
+        myBox.open();           // Коробканы қайтадан ашу
+        myBox.removeItem();     // Коробкадан затты алу
+        myBox.repaint("красный"); // Коробканы қайта бояу
+        myBox.printBoxInfo();   // Қайтадан ақпаратты басып шығару
+    }
+}
